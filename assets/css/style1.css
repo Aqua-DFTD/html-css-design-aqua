@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Red Hat Display", Verdana, sans-serif;
+}
+
+/*{
+outline: 1px solid red;
+}
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header, .navbar {
+    background-color: #469280;
+    box-shadow: 0px 0px 15px 5px #00000081;
+    display: flex;
+    justify-content: center; /* Centrer les éléments horizontalement */
+    align-items: center; /* Centrer les éléments verticalement */
+    height: 150px; /* Adapte la hauteur du header à la hauteur de la fenêtre (pour l'exemple) */
+    padding: 0 20px;
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+
+    .logo-container {
+        position: absolute;
+        left: 250px; /* Ajustez cette valeur selon vos besoins */
+        display: flex;
+        align-items: center;
+        height: 100%;
+        img{
+            height: 80px;
+            width: auto;
+        }
+    }
+    nav {
+        display: flex;
+        justify-content: center; /* Centrer les éléments horizontalement dans le nav */
+        align-items: center; /* Centrer les éléments verticalement dans le nav */
+
+        ul {
+            display: flex; /* Alignement horizontal des boutons */
+            flex-wrap: wrap; /* Les boutons se répartissent sur plusieurs lignes si la fenêtre est trop étroite */
+            justify-content: center; /* Centrer les boutons horizontalement */
+            align-items: center; /* Centrer les boutons verticalement */
+            list-style: none; /* Supprime les puces des listes */
+            padding: 0;
+            margin: 0;
+
+            li {
+                margin: 0 26px; /* Espacement entre les boutons */
+                font-size: 22px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    transition: background-color 0.3s ease, color 0.3s ease;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 2px;
+                        bottom: -5px;
+                        left: 0;
+                        background-color: white;
+                        transition: width 0.3s ease;
+                    }
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        height: auto; /* Ajuste la hauteur du header sur les petits écrans */
+        padding: 10px;
+    }
+    nav ul {
+        flex-direction: column; /* Empile les boutons verticalement sur petits écrans */
+        margin-top: 10px;
+        li {
+            margin: 10px 0; /* Espace entre les boutons dans l'empilement vertical */
+        }
+    }
+}
+
+
+.back-vid-container {
+    background-color: lawngreen;
+    position: relative;
+    height: 0;
+    padding: 0 0 50% 0;
+    overflow: hidden;
+    video {
+        position: absolute;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+    .wave{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 800;
+    }
+}

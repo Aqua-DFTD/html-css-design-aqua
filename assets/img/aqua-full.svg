@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 554.75 182.86">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: MontserratRoman-ExtraBold, Montserrat;
+        font-size: 107.39px;
+        font-variation-settings: 'wght' 800;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m177.08,1.74s-3.51-3.92-7.42,0l.62,179.02s2.89,4.74,6.81,0V1.74Z"/>
+  <text class="cls-2" transform="translate(209.27 129.76)"><tspan x="0" y="0">AQUA</tspan></text>
+  <path class="cls-1" d="m114.58,118.73C102.23,71.28,56.95,0,56.95,0,56.95,0,9.71,77.56.4,118.73c0,0-7.8,50.7,45.72,64.13h23.62c53.08-14.73,44.85-64.13,44.85-64.13h0Zm-60.49,48.78c-9.53-6.39,0-13.54,0-13.54,31.96.43,30.98-31.53,30.98-31.53,9.1-7.87,13.54,1.95,13.54,1.95-4.08,45.36-44.52,43.12-44.52,43.12Z"/>
+</svg>
